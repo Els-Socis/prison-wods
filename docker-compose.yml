@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  list-app:
+    build: ./list-app
+
+  api:
+    build: ./api
+
+  db:
+    image: mongo
+    container_name: db
+    volumes:
