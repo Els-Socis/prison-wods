@@ -1,0 +1,17 @@
+{
+  "name": "prison-wods",
+  "version": "0.1.0",
+  "description": "List of WODs scheduled for the COVID-19 confinement",
+  "main": "server.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "@hapi/hapi": "^19.1.1",
+    "mongoose": "^5.9.10"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
