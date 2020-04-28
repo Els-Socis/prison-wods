@@ -1,4 +1,4 @@
 module.exports = [
-  require('./get'),
+  require('./listWods'),
   require('./404'),
 ];

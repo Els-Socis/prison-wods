@@ -5,7 +5,7 @@ module.exports = {
       method: 'GET',
       path: '/wods',
       handler: () => {
-        return server.app.repositories.wodRepository.get();
+        return server.app.repositories.wodRepository.list();
       },
       options: {
         description: 'Get a list of Priston WODs',
