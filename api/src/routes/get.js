@@ -3,9 +3,13 @@ module.exports = {
   register: (server) => {
     server.route({
       method: 'GET',
-      path: '/',
+      path: '/wods',
       handler: () => {
         return server.app.repositories.wodRepository.get();
+      },
+      options: {
+        description: 'Get a list of Priston WODs',
+        tags: ['api'],
       },
     });
   },
