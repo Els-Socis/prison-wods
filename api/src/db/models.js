@@ -2,8 +2,14 @@ const mongoose = require('mongoose');
 
 const schemas = {
   wod: {
-    releaseDate: Date,
-    videoUrl: String,
+    releaseDate: {
+      type: Date,
+      required: true,
+    },
+    videoUrl: {
+      type: String,
+      required: true,
+    },
     rating: mongoose.Schema.Types.Decimal128,
     type: {
       type: String,
