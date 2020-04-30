@@ -17,14 +17,6 @@ const schemas = {
     },
     tags: [String],
     completionDate: Date,
-    createdAt: {
-      type: Date,
-      default: Date.now,
-    },
-    updatedAt: {
-      type: Date,
-      default: Date.now,
-    },
   },
 };
 
@@ -34,7 +26,7 @@ module.exports = {
     server.app.db.models = Object.entries(schemas).reduce(
       (models, [name, structure]) => ({
         ...models,
-        [name]: mongoose.model(name, new mongoose.Schema(structure))
+        [name]: mongoose.model(name, new mongoose.Schema(structure, { timestamps: true }))
       }),
       {},
     );
