@@ -33,7 +33,7 @@ module.exports = {
               .example('https://www.youtube.com/watch?v=0swlpo075aM'),
             type: Joi
               .string()
-              .valid('FT', 'RFT', 'AMRAP', 'CHIPPER', 'STATIONS')
+              .valid('FT', 'RFT', 'AMRAP', 'EMOM', 'DEATH BY', 'CHIPPER', 'STATIONS')
               .optional()
               .example('RFT'),
             tags: Joi
