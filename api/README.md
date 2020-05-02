@@ -23,3 +23,5 @@ You must go outside /api folder and run:
 ```sh
 docker-compose up
 ```
+
+You are all set and can navigate to http://localhost:8080/docs and begin to play!
