@@ -47,7 +47,7 @@ module.exports = {
               .example('8.5'),
             type: Joi
               .string()
-              .valid('FT', 'RFT', 'AMRAP', 'CHIPPER', 'STATIONS')
+              .valid('FT', 'RFT', 'AMRAP', 'EMOM', 'DEATH BY', 'CHIPPER', 'STATIONS')
               .optional()
               .example('RFT'),
             tags: Joi
