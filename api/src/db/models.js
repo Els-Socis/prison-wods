@@ -13,7 +13,7 @@ const schemas = {
     rating: mongoose.Schema.Types.Decimal128,
     type: {
       type: String,
-      enum: ['FT', 'RFT', 'AMRAP', 'CHIPPER', 'STATIONS'],
+      enum: ['FT', 'RFT', 'AMRAP', 'EMOM', 'DEATH BY', 'CHIPPER', 'STATIONS'],
     },
     tags: [String],
     completionDate: Date,
