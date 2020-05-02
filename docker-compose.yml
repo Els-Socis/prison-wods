@@ -1,13 +1,16 @@
 version: "3"
 
 services:
-  list-app:
-    build: ./list-app
-
   api:
     build: ./api
+    container_name: api
+    ports:
+      - 8080:3000
+    depends_on:
+      - db
 
   db:
     image: mongo
     container_name: db
-    volumes:
+    ports:
+      - 27017:27017

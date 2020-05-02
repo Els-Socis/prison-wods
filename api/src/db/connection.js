@@ -4,7 +4,7 @@ module.exports = {
   name: 'DB Connection',
   register: async (server) => {
     try {
-      await mongoose.connect('mongodb://localhost:27017/prisonWods', {
+      await mongoose.connect('mongodb://db:27017/prisonWods', {
         useNewUrlParser: true,
         useUnifiedTopology: true,
       });

@@ -18,4 +18,8 @@ yarn && yarn run dev
 You are all set and can navigate to http://localhost:3000/docs and begin to play!
 
 ## Docker
-[To Be Implemented...]
+You must go outside /api folder and run:
+
+```sh
+docker-compose up
+```
