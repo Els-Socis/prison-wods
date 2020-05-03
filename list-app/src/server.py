@@ -1,6 +1,5 @@
 import requests
 from flask import Flask, render_template
-import json
 
 
 app = Flask(__name__)
@@ -28,10 +27,7 @@ def home():
         a template to be rendered
     """
 
-    # Get the wods
-    wods = get_wods()
-
-    return render_template('/home.html', wods=wods)
+    return render_template('/home.html', wods=get_wods())
 
 
 def main(module_name):
