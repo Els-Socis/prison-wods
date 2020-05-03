@@ -4,3 +4,7 @@ yarn-error.log
 
 # Docker
 .dockerignore
+Dockerfile
+
+# Other
+README.md
