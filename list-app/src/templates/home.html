@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block title %}
+    Prison Wods
+{% endblock title %}
+
+{% block content %}
+    {% for wod in wods %}
+        <h1>Wod number: {{ loop.index }}</h1>
+        <p>Released on: {{ wod.releaseDate[:10] }}</p>
+        <p>Vodeo url: {{ wod.videoUrl }}</p>
+        <p>Type: {{ wod.type }}</p>
+        <p>Tags: {{ wod.tags | join (', ') }}</p>
+    {% endfor %}
+{% endblock content %}
