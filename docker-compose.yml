@@ -16,4 +16,7 @@ services:
     ports:
       - 27017:27017
     volumes:
-      - ./api/data/db:/data/db
+      - dbdata:/data/db
+
+volumes:
+  dbdata:
