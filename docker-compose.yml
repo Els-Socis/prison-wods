@@ -1,6 +1,15 @@
 version: "3"
 
 services:
+  webapp:
+    build: ./list-app
+    image: prison-wods-webapp
+    container_name: webapp
+    ports:
+      - 8080:5000
+    depends_on:
+      - api
+
   api:
     build: ./api
     image: prison-wods-api

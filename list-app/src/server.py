@@ -14,7 +14,7 @@ def get_wods():
         a json containing all the wods
     """
 
-    return requests.get('http://localhost:8080/wods').json()
+    return requests.get('http://api:3000/wods').json()
 
 
 @app.route("/")
