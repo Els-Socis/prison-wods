@@ -14,16 +14,12 @@ services:
     build: ./api
     image: prison-wods-api
     container_name: api
-    ports:
-      - 3000:3000
     depends_on:
       - db
 
   db:
     image: mongo
     container_name: db
-    ports:
-      - 27017:27017
     volumes:
       - dbdata:/data/db
 
